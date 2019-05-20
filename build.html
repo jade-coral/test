@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#red {
+  background-color: red;
+  left: 0px;
+}
+
+#green {
+  background-color: green;
+  right: 0px;
+  animation-direction: alternate-reverse; 
+}
+
+#red, #green
+{
+  top: 0px;
+  width: 50%;
+  height: 700px;
+  position: absolute;
+  display:block;
+  animation-timing-function: linear;
+  animation-name: example;
+  animation-duration: 4s;
+  
+}
+
+@keyframes example {
+  from  {left:0px; right:700px; }
+  to {left:700px; right: 0px; }
+  
+</style>
+</head>
+<body>
+
+
+<div id="red"></div>
+<div id="green"></div>
+
+</body>
+</html>
