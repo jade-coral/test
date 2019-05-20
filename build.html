@@ -2,20 +2,20 @@
 <html>
 <head>
 <style> 
-#red {
+.red {
   background-color: red;
-  left: 0px;
+  left: 0;
 }
 
-#green {
+.green {
   background-color: green;
-  right: 0px;
+  right: 0;
   animation-direction: alternate-reverse; 
 }
 
-#red, #green
+.red, .green
 {
-  top: 0px;
+  top: 0;
   width: 50%;
   height: 700px;
   position: absolute;
@@ -26,17 +26,21 @@
   
 }
 
-@keyframes example {
-  from  {left:0px; right:700px; }
+/* @keyframes example {
+  from  {left:0; right:700px; }
   to {left:700px; right: 0px; }
-  
+} */
+
 </style>
 </head>
 <body>
 
 
-<div id="red"></div>
-<div id="green"></div>
+<div class="red">
+    <span>ggfdsgfsdgs</span><span>asdfghj</span>
+
+</div>
+<div class="green"></div>
 
 </body>
 </html>
